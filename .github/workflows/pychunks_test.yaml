@@ -18,10 +18,10 @@ jobs:
         python: ['3.8', '3.9', '3.10']
         platform: [ubuntu-latest, windows-latest]
         testfile: [
-                   "pychunks/test/langchain/test_langchain.py",
-                   "pychunks/test/llama_index/test_code_splitter.py",
-                   "pychunks/test/llama_index/test_sentence_splitter.py",
-                   "pychunks/test/llama_index/test_token_splitter.py",
+                   "./test/langchain/test_langchain.py",
+                   "./test/llama_index/test_code_splitter.py",
+                   "./test/llama_index/test_sentence_splitter.py",
+                   "./test/llama_index/test_token_splitter.py",
                   ]
     runs-on: ${{ matrix.platform }}
     steps:
